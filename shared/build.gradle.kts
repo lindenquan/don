@@ -5,8 +5,7 @@ plugins {
 }
 
 kotlin {
-    @OptIn(ExperimentalKotlinGradlePluginApi::class)
-    targetHierarchy.default()
+    kotlin.applyDefaultHierarchyTemplate()
 
     jvm()
     
