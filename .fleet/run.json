@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "androidApp",
+      "type": "android-app",
+      "workingDir": "$PROJECT_DIR$",
+      "allowParallelRun": true,
+      "module": "don.composeApp.main",
+      "destination": "samsung SM-S911W"
+    },
+    {
+      "name": "iosApp",
+      "type": "xcode-app",
+      "workingDir": "$PROJECT_DIR$",
+      "buildTarget": {
+        "project": "iosApp",
+        "target": "iosApp"
+      },
+      "configuration": "Debug",
+      "destination": ""
+    }
+  ]
+}
