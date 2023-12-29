@@ -1,7 +1,23 @@
 {
   "configurations": [
     {
-      "name": "androidApp",
+      "name": "Desktop App",
+      "type": "command",
+      "program": "$PROJECT_DIR$/gradlew",
+      "args": [
+        "composeApp:run"
+      ]
+    },
+    {
+      "name": "Browser App",
+      "type": "command",
+      "program": "$PROJECT_DIR$/gradlew",
+      "args": [
+        "composeApp:wasmJsRun"
+      ]
+    },
+    {
+      "name": "Android App",
       "type": "android-app",
       "workingDir": "$PROJECT_DIR$",
       "allowParallelRun": true,
@@ -9,7 +25,7 @@
       "destination": "samsung SM-S911W"
     },
     {
-      "name": "iosApp",
+      "name": "ios App",
       "type": "xcode-app",
       "workingDir": "$PROJECT_DIR$",
       "buildTarget": {
@@ -17,7 +33,7 @@
         "target": "iosApp"
       },
       "configuration": "Debug",
-      "destination": ""
+      "destination": "iOS Device"
     }
   ]
 }
