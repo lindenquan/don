@@ -6,7 +6,6 @@ export class MyElement extends LitElement {
   static override styles = css`
     :host {
       display: block;
-      border: solid 1px gray;
       padding: 16px;
       max-width: 800px;
     }
