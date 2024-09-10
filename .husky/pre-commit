@@ -1,0 +1,5 @@
+pnpm fmt
+pnpm fmt.check
+pnpm lint
+pnpm test
+git update-index --again
