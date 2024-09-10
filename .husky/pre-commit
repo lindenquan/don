@@ -1,0 +1,10 @@
+# Check for changed files and filter out certain suffixes
+if git diff --cached --name-only | grep -E '\.(ts|tsx|js)$' | grep -q .; then
+  echo "Running checks..."
+  pnpm check
+  pnpm test
+  pnpm build
+else
+  echo "No relevant changes, skipping checks."
+fi
+
