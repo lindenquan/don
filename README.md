@@ -4,6 +4,8 @@ Personal financial management app.
 
 ## Tech stack
 
+[pNpm](https://pnpm.io/): Fast, disk space efficient package manager
+
 [Release Please](https://github.com/googleapis/release-please): Release Please automates CHANGELOG generation, the creation of GitHub releases, and version bumps for your projects.
 
 [Husky](https://github.com/typicode/husky): Auto run `prettier`, `analyzer` and `linter` and `unit tests` before commit.
