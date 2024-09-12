@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/lindenquan/don/compare/v0.2.2...v0.2.3) (2024-09-12)
+
+
+### Bug Fixes
+
+* ci.yaml ([4fa4799](https://github.com/lindenquan/don/commit/4fa47992df2dc2294291c5d5441244efa13e6e48))
+
 ## [0.2.2](https://github.com/lindenquan/don/compare/v0.2.1...v0.2.2) (2024-09-12)
 
 
