@@ -1,6 +1,23 @@
-# Don
+<br>
+<p align="center">
+  <img alt="Don Logo" width="400" src="https://raw.githubusercontent.com/QwikDev/qwik/main/.github/assets/qwik-logo.svg" />
+</p>
+<br>
+<p align="center">
+  <a href="https://github.com/lindenquan/don/actions/workflows/ci.yml"><img src="https://github.com/lindenquan/don/actions/workflows/ci.yml/badge.svg?event=push" alt="Don CI"></a>
+</p>
+<br>
+<br>
 
-Personal financial management app.
+<h1 align="center">Personal Financial Management App</h1>
+
+## Table of Contents
+
+- [Tech stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Development](#development)
+- [Production](#production)
+- [Roadmap](#roadmap)
 
 ## Tech stack
 
@@ -38,14 +55,6 @@ Inside your project, you'll see the following directory structure:
 
 - `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
 
-## Add Integrations and deployment
-
-Use the `pnpm qwik add` command to add additional integrations. Some examples of integrations includes: Cloudflare, Netlify or Express Server, and the [Static Site Generator (SSG)](https://qwik.dev/qwikcity/guides/static-site-generation/).
-
-```shell
-pnpm qwik add
-```
-
 ## Development
 
 Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
@@ -56,14 +65,6 @@ pnpm start
 
 > Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
 
-## Preview
-
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
-
-```shell
-pnpm preview
-```
-
 ## Production
 
 The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
@@ -71,3 +72,69 @@ The production build will generate client and server modules by running both cli
 ```shell
 pnpm build
 ```
+
+## Roadmap
+
+- 🚧 <span style="color:blue">**TODO**</span> Account Aggregation
+
+  - Link multiple bank accounts, credit cards, loans, and investment accounts.
+  - Real-time synchronization of balances and transactions.
+
+- 🚧 <span style="color:blue">**TODO**</span> Expense Tracking
+
+  - Automatically categorize transactions (e.g., groceries, entertainment, utilities) by taking pictures of receipts.
+  - Manual entry of expenses and transactions.
+  - Support for splitting transactions (e.g., shared bills).
+  - Tagging expenses for more personalized tracking (e.g., vacations, business).
+
+- 🚧 <span style="color:blue">**TODO**</span> Income Tracking
+
+  - Record and categorize income (salary, freelance, dividends, etc.).
+  - Monitor recurring income streams and one-time payments.
+  - Integration with payroll systems and tax tracking for income insights.
+
+- 🚧 <span style="color:blue">**TODO**</span> Bill Management
+
+  - Add and track recurring bills (rent, utilities, subscriptions, etc.).
+  - Bill reminders and notifications (upcoming due dates).
+  - Ability to set up autopay or mark bills as paid.
+
+- 🚧 <span style="color:blue">**TODO**</span> Investment Tracking
+
+  - Link investment accounts and track portfolio performance.
+  - Track asset allocations (stocks, bonds, mutual funds, etc.).
+  - Monitor net worth based on assets and liabilities.
+  - Portfolio diversification and investment insights.
+
+- 🚧 <span style="color:blue">**TODO**</span> Debt Management
+
+  - Track loans (student loans, mortgages, credit card debt).
+  - Payment reminders and automated debt payoff plans (e.g., debt snowball, debt avalanche).
+  - Interest calculation and amortization schedules.
+
+- 🚧 <span style="color:blue">**TODO**</span> Financial Insights & Reports
+
+  - Visualize monthly cash flow (income vs. expenses).
+  - Detect trends in cash flow patterns (e.g., surpluses, deficits).
+  - Forecast future cash flow based on current spending patterns.
+  - Generate monthly, quarterly, and annual financial reports.
+  - Provide insights into spending patterns, income trends, and savings performance.
+  - Track overall net worth based on assets (bank balances, properties) and liabilities (debts, loans).
+  - Historical data visualization to track net worth growth or decline.
+
+- 🚧 <span style="color:blue">**TODO**</span> Credit Score Monitoring
+
+  - Link with credit score agencies to monitor and report credit scores.
+  - Provide insights on how to improve the credit score.
+  - Offer alerts for changes in credit reports.
+
+- 🚧 <span style="color:blue">**TODO**</span> Alerts & Notifications
+
+  - Customizable alerts for various financial events (e.g., low balance, overspending, bill due).
+  - Notifications for account changes, suspicious activity, or significant financial milestones.
+  - Weekly or monthly summaries of financial activities.
+
+- 🚧 <span style="color:blue">**TODO**</span> Security Features
+  - Bank-level encryption to protect sensitive data.
+  - Biometric login (fingerprint, face ID).
+  - Automatic logout after a period of inactivity.

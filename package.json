@@ -13,10 +13,13 @@
   "author": "Linden Quan",
   "license": "ISC",
   "scripts": {
+    "install": "pnpm husky && pnpm install netlify-cli --ignore-scripts -D",
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.ssg": "vite build -c adapters/static/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
+    "clean": "rm -rf dist",
     "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
     "dev": "vite --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
@@ -24,9 +27,9 @@
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
     "preview": "qwik build preview && vite preview --open",
+    "preview.ssg": "pnpm build.ssg && pnpm netlify dev --dir=dist",
     "start": "vite --open --mode ssr",
-    "test": "vitest run --coverage",
-    "clean": "rm -rf dist"
+    "test": "vitest run --coverage"
   },
   "devDependencies": {
     "@builder.io/qwik": "^1.8.0",
@@ -38,6 +41,8 @@
     "@vitest/coverage-v8": "^2.0.5",
     "eslint": "8.57.0",
     "eslint-plugin-qwik": "^1.8.0",
+    "husky": "^9.1.6",
+    "netlify-cli": "^17.36.0",
     "prettier": "3.3.3",
     "typescript": "5.4.5",
     "undici": "*",

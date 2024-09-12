@@ -40,3 +40,6 @@ lerna-debug.log*
 
 # Husky
 **/_/
+
+# Local Netlify folder
+.netlify
