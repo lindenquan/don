@@ -17,7 +17,7 @@
     "build": "qwik build",
     "build.client": "vite build",
     "build.preview": "vite build --ssr src/entry.preview.tsx",
-    "build.ssg": "vite build -c adapters/static/vite.config.ts",
+    "build.ssg": "pnpm run build && vite build -c adapters/static/vite.config.ts",
     "build.types": "tsc --incremental --noEmit",
     "clean": "rm -rf dist",
     "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",

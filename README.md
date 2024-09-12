@@ -1,10 +1,11 @@
 <br>
 <p align="center">
-  <img alt="Don Logo" width="400" src="https://raw.githubusercontent.com/QwikDev/qwik/main/.github/assets/qwik-logo.svg" />
+  <img alt="Don Logo" width="100" src="https://raw.githubusercontent.com/lindenquan/don/main/.github/assets/logo.svg" />
+  <span style="font-size: 40px; color: black;">Don</span>
 </p>
 <br>
 <p align="center">
-  <a href="https://github.com/lindenquan/don/actions/workflows/ci.yml"><img src="https://github.com/lindenquan/don/actions/workflows/ci.yml/badge.svg?event=push" alt="Don CI"></a>
+  <a href="https://github.com/lindenquan/don/actions/workflows/ci.yml"><img src="https://github.com/lindenquan/don/actions/workflows/ci.yaml/badge.svg?event=push" alt="Don CI"></a>
 </p>
 <br>
 <br>
