@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/lindenquan/don/compare/v0.1.0...v0.1.1) (2024-10-08)
+
+
+### Bug Fixes
+
+* update package.json ([457345b](https://github.com/lindenquan/don/commit/457345bb02797f4973f56d73610aa1a76103352b))
+
 ## [0.2.3](https://github.com/lindenquan/don/compare/v0.2.2...v0.2.3) (2024-09-12)
 
 
