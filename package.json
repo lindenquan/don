@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "description": "personal financial management app",
   "engines": {
-    "node": "^20.3.0 || >=21.0.0"
+    "node": ">=20.3.0"
   },
-  "packageManager": "pnpm@9.11.0",
+  "packageManager": "pnpm@9.12.1",
   "type": "module",
-  "main": "main.ts",
   "keywords": [
     "qwik",
-    "vite"
+    "vite",
+    "financial management"
   ],
   "files": [
     "src/",
@@ -19,6 +19,7 @@
   "author": "Linden Quan",
   "license": "ISC",
   "private": false,
+  "scripts_annotation": "SSR build/dev relies on SSG build/dev.",
   "scripts": {
     "install": "pnpm husky",
     "build": "pnpm run clean && qwik build",
