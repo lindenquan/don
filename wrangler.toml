@@ -1,14 +1,7 @@
-name = "Don"
-type = "javascript"
+name = "don"
 pages_build_output_dir = "./dist"
 
 # Build configuration (if applicable)
 [build]
 command = "pnpm build"
 cwd = "."
-
-# Cache-Control headers for caching assets for 30 days
-[[headers]]
-for = "*"
-Cache-Control = "public, max-age=2592000"
-ETag = "W/etag"
