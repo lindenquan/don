@@ -1,6 +1,9 @@
 name = "Don"
 type = "javascript"
 
+[env]
+pages_build_output_dir = "./dist"
+
 # Build configuration (if applicable)
 [build]
 command = "pnpm build"
