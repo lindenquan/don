@@ -1,5 +1,8 @@
-/**
-  Content-Security-Policy: default-src 'self'; font-src 'self'; img-src 'self' data:; script-src 'self' https: 'nonce-7aef386c1d7bf19750fa0429aafb218a' 'strict-dynamic'; style-src 'self'; frame-src 'self' 'nonce-7aef386c1d7bf19750fa0429aafb218a'; object-src 'none'; base-uri 'self'
+/*.html
+  Cache-Control: max-age=0, private, must-revalidate
+  
+/*
+  Content-Security-Policy: script-src 'self' https: 'nonce-7aef386c1d7bf19750fa0429aafb218a'; frame-src 'self' 'nonce-7aef386c1d7bf19750fa0429aafb218a'; object-src 'none'; base-uri 'self'
   Cache-Control: public, max-age=2592000
   Cross-Origin-Resource-Policy: same-origin
   Cross-Origin-Embedder-Policy: require-corp
@@ -8,14 +11,10 @@
   Referrer-Policy: no-referrer
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Content-Type-Options: nosniff
-  X-DNS-Prefetch-Control: off
   X-Download-Options: noopen
+  X-DNS-Prefetch-Control: off
   X-Permitted-Cross-Domain-Policies: none
   X-Frame-Options: DENY
   X-Robots-Tag: noindex, nofollow
-  Permissions-Policy: document-domain=()
-  ! X-Powered-By
-  ! server
-
-/*.jpg
-  ! Cache-Control
+  Server: N/A
+  Report-To: N/A
