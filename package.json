@@ -1,14 +1,21 @@
 {
   "name": "@linden_quan/don",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "personal financial management app",
   "engines": {
     "node": ">=18.17.0"
   },
   "packageManager": "pnpm@9.12.1",
   "type": "module",
-  "keywords": ["qwik", "vite", "financial management"],
-  "files": ["src/", "public/"],
+  "keywords": [
+    "qwik",
+    "vite",
+    "financial management"
+  ],
+  "files": [
+    "src/",
+    "public/"
+  ],
   "author": "Linden Quan",
   "license": "ISC",
   "private": false,
