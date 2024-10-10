@@ -4,7 +4,7 @@
 </p>
 <br>
 <p align="center">
-  <a href="https://github.com/lindenquan/don/actions/workflows/ci.yml"><img src="https://github.com/lindenquan/don/actions/workflows/ci.yaml/badge.svg?event=push" alt="Don CI"></a>
+  <a href="https://github.com/lindenquan/don/actions/workflows/ci.yaml"><img src="https://github.com/lindenquan/don/actions/workflows/ci.yaml/badge.svg?event=push" alt="Don CI"></a>
   <a href="https://don.doctornova.net/" target="_blank"><img src="https://img.shields.io/badge/Cloudflare_Pages-0690FA?labelColor=black&logo=Cloudflare&style=flat-square" alt="Cloudflare Pages"></a>
   <a href="https://app.codecov.io/github/lindenquan/don"><img src="https://img.shields.io/codecov/c/github/lindenquan/don/master.svg" alt="Codecov"></a>
   <a href=""><img src="https://badgen.net/npm/license/@linden_quan/don" alt="License" /></a>
