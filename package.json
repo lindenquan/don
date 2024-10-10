@@ -1,6 +1,6 @@
 {
   "name": "@linden_quan/don",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "personal financial management app",
   "engines": {
     "node": ">=18.17.0"
