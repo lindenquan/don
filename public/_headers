@@ -13,8 +13,3 @@
   X-Permitted-Cross-Domain-Policies: none
   X-Frame-Options: DENY
   X-Robots-Tag: noindex, nofollow
-  Server: N/A
-  Report-To: N/A
-
-/*.html
-  ! Cache-Control
