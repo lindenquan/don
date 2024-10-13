@@ -1,0 +1,18 @@
+if [ -n "$GITHUB_ACTIONS" ]; then
+  echo "Running on GitHub Actions, skip commit messages"
+else
+  INPUT_FILE=$1
+  START_LINE=`head -n1 $INPUT_FILE`
+  # Define a regex for conventional commit messages with scope
+  CONVENTIONAL_COMMIT_REGEX="^(init|feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert)(\([a-zA-Z0-9]+\))?: .+"
+  
+  # Check if the commit message matches the regex
+  if ! [[ "${START_LINE}" =~ ${CONVENTIONAL_COMMIT_REGEX} ]]; then
+    echo "Commit message is not conventional. It should follow the format: <type>(<scope>): <description>"
+    echo "Your message:"
+    echo "--------------"
+    echo $START_LINE
+    echo "--------------"
+    exit 1
+  fi  
+fi
