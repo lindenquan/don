@@ -1,0 +1,18 @@
+INPUT_FILE=$1
+START_LINE=`head -n1 $INPUT_FILE`
+# Define a regex for conventional commit messages with scope
+CONVENTIONAL_COMMIT_REGEX="^(feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert)(\([a-zA-Z0-9]+\))?: .+"
+
+
+# Check if the commit message matches the regex
+if ! [[ "${START_LINE}" =~ ${CONVENTIONAL_COMMIT_REGEX} ]]; then
+  echo "Commit message is not conventional. It should follow the format: <type>(<scope>): <description>"
+  echo "Your message:"
+  echo "--------------"
+  echo $START_LINE
+  echo "--------------"
+  exit 1
+fi
+
+echo "Commit message is valid."
+exit 0
