@@ -8,7 +8,8 @@
       "node_modules/",
       ".husky/",
       ".github/",
-      ".turbo/"
+      ".turbo/",
+      "**/.netlify/**"
     ]
   },
   "formatter": {

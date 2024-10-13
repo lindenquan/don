@@ -1,16 +1,15 @@
 # Build
-/dist
-/lib
-/lib-types
-/server
-/tmp
-**/coverage/
-.turbo
+dist/
+lib/
+coverage/
+.turbo/
+types/
 
 # Development
-node_modules
+node_modules/
 *.local
-
+**/.devcontainer.json
+devcontainer/
 # Cache
 .cache
 .mf
