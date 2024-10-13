@@ -1,0 +1,46 @@
+{
+  "name": "don",
+  "version": "1.0.0",
+  "private": true,
+  "description": "personal financial management app",
+  "author": "Linden Quan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lindenquan/don"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "pnpm": ">=9.12.1"
+  },
+  "packageManager": "pnpm@9.12.1",
+  "keywords": [
+    "financial management"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "husky",
+    "lint:check": "biome check --verbose",
+    "lint:fix": "biome check --write",
+    "build": "turbo build",
+    "test": "turbo test",
+    "clean": "turbo clean; ./scripts/clean.sh",
+    "publish": "changeset publish"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@changesets/cli": "^2.27.10",
+    "dotenv": "^16.4.5",
+    "husky": "^9.1.7",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.6"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "since 2023",
+    "not dead"
+  ]
+}
