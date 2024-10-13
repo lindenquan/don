@@ -1,0 +1,26 @@
+{
+  "name": "@linden_quan/app",
+  "version": "0.1.0",
+  "description": "don client app",
+  "type": "module",
+  "scripts": {
+    "start": "pnpm vite",
+    "dev": "pnpm vite",
+    "build": "pnpm vite build",
+    "serve": "pnpm netlify dev --dir dist",
+    "test": "pnpm vitest --no-watch --coverage"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@solidjs/testing-library": "^0.8.10",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@vitest/coverage-v8": "2.1.2",
+    "jsdom": "^25.0.1",
+    "netlify-cli": "^17.37.0",
+    "solid-devtools": "^0.29.3",
+    "vite-plugin-solid": "^2.10.2"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.11"
+  }
+}

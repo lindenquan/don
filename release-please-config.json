@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "node",
+  "draft": false,
+  "prerelease": false,
+  "bump-minor-pre-major": false,
+  "bump-patch-for-minor-pre-major": false,
+  "changelog-path": "CHANGELOG.md",
+  "versioning": "default",
+  "include-v-in-tag": false,
+  "tag-separator": "@",
+  "packages": {
+    "packages/app": {
+      "package-name": "@linden_quan/app",
+      "component": "@linden_quan/app"
+    }
+  }
+}
