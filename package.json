@@ -23,7 +23,8 @@
     "build": "pnpm turbo build",
     "test": "pnpm turbo test",
     "prepublish": "pnpm build",
-    "publish-packages": "./scripts/publish.sh"
+    "publish-packages": "./scripts/publish.sh",
+    "clean": "pnpm turbo clean"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.3",
