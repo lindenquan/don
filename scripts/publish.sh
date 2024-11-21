@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Navigate to the packages directory
-cd packages || { echo "Packages directory not found!"; exit 1; }
+cd apps || { echo "Packages directory not found!"; exit 1; }
 
 # Loop through each subdirectory in the packages folder
 for dir in */; do
