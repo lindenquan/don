@@ -14,7 +14,7 @@
     "financial management"
   ],
   "license": "ISC",
-  "private": false,
+  "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "husky",

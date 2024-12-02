@@ -1,5 +1,10 @@
 # Check for changesets
-pnpm changeset status --since=main
+if git diff --name-only | grep -q '^.changeset/.*\.md$'; then
+  echo "Detected uncommitted changesets"
+else
+  pnpm changeset status --since=main
+fi
+
 
 # Check for changed files and filter out certain suffixes
 if git diff --cached --name-only | grep -E '\.(ts|tsx|json|html)$' | grep -q .; then
