@@ -1,3 +1,6 @@
+# Check for changesets
+pnpm changeset status --since=main
+
 # Check for changed files and filter out certain suffixes
 if git diff --cached --name-only | grep -E '\.(ts|tsx|json|html)$' | grep -q .; then
   echo "Running checks..."
