@@ -12,6 +12,9 @@
     "clean": "rm -rf dist node_modules coverage .turbo"
   },
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@solidjs/testing-library": "^0.8.10",
     "@testing-library/jest-dom": "^6.6.2",
