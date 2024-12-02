@@ -1,10 +1,7 @@
 {
   "name": "don",
   "version": "1.0.0",
-  "workspaces": [
-    "packages/*",
-    "apps/*"
-  ],
+  "private": true,
   "description": "personal financial management app",
   "author": "Linden Quan",
   "repository": {
@@ -20,7 +17,6 @@
     "financial management"
   ],
   "license": "ISC",
-  "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "husky",
@@ -28,8 +24,7 @@
     "lint:fix": "biome check --write",
     "build": "turbo build",
     "test": "turbo test",
-    "clean": "turbo clean; ./scripts/clean.sh",
-    "publish": "changeset publish"
+    "clean": "turbo clean; ./scripts/clean.sh"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
