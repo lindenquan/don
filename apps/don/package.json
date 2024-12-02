@@ -1,6 +1,6 @@
 {
   "name": "@linden_quan/don",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "don client app",
   "type": "module",
   "scripts": {
