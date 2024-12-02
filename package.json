@@ -1,5 +1,10 @@
 {
-  "name": "@linden_quan/don",
+  "name": "don",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "description": "personal financial management app",
   "author": "Linden Quan",
   "repository": {
@@ -7,7 +12,8 @@
     "url": "https://github.com/lindenquan/don"
   },
   "engines": {
-    "node": ">=18.17.0"
+    "node": ">=18.17.0",
+    "pnpm": ">=9.12.1"
   },
   "packageManager": "pnpm@9.12.1",
   "keywords": [

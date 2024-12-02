@@ -1,21 +1,20 @@
-# Check for changesets
 if [ -n "$GITHUB_ACTIONS" ]; then
   echo "Running on GitHub Actions, skip checking changesets"
 else
   echo "Running locally"
+  # Check for changesets
   if git diff --name-only | grep -q '^.changeset/.*\.md$'; then
     echo "Detected uncommitted changesets"
   else
     pnpm changeset status --since=main
   fi
-fi
 
-# Check for changed files and filter out certain suffixes
-if git diff --cached --name-only | grep -E '\.(ts|tsx|json|html)$' | grep -q .; then
-  echo "Running checks..."
-  pnpm lint:check
-  pnpm test
-else
-  echo "No relevant changes, skipping checks."
+  # Check for changed files and filter out certain suffixes
+  if git diff --cached --name-only | grep -E '\.(ts|tsx|json|html)$' | grep -q .; then
+    echo "Running checks..."
+    pnpm lint:check
+    pnpm test
+  else
+    echo "No relevant changes, skipping checks."
+  fi
 fi
-
