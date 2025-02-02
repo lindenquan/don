@@ -16,12 +16,16 @@
     "access": "public"
   },
   "devDependencies": {
+    "@grpc/grpc-js": "^1.12.5",
     "@solidjs/testing-library": "^0.8.10",
+    "@tailwindcss/postcss": "^4.0.3",
     "@testing-library/jest-dom": "^6.6.2",
     "@vitest/coverage-v8": "2.1.4",
+    "autoprefixer": "^10.4.20",
     "jsdom": "^25.0.1",
     "solid-devtools": "^0.30.1",
     "solid-js": "^1.9.3",
+    "tailwindcss": "^4.0.3",
     "vite-plugin-solid": "^2.11.0"
   }
 }
