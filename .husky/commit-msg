@@ -1,6 +1,4 @@
-if [ -n "$GITHUB_ACTIONS" ]; then
-  echo "Running on GitHub Actions, skip commit messages"
-else
+check_commit_message() {
   INPUT_FILE=$1
   START_LINE=`head -n1 $INPUT_FILE`
   # Define a regex for conventional commit messages with scope
@@ -14,5 +12,15 @@ else
     echo $START_LINE
     echo "--------------"
     exit 1
-  fi  
-fi
+  fi 
+}
+
+main() {
+  if [ -n "$GITHUB_ACTIONS" ]; then
+    echo "Running on GitHub Actions, skip commit message check"
+  else
+    check_commit_message $1
+  fi
+}
+
+main $1
