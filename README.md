@@ -32,7 +32,7 @@
 
 [pNpm](https://pnpm.io/): Fast, disk space efficient package manager
 
-[Release Please](https://github.com/googleapis/release-please): Release Please automates CHANGELOG generation, the creation of GitHub releases, and version bumps for your projects.
+[Changesets](https://github.com/changesets/changesets): A tool to manage versioning and changelogs with a focus on multi-package repositories.
 
 [Husky](https://github.com/typicode/husky): Auto run `lint`, `unit tests`, `build` before commit.
 
