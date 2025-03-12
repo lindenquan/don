@@ -30,7 +30,9 @@
 
 ## Tech stack
 
-[pNpm](https://pnpm.io/): Fast, disk space efficient package manager
+[pNpm](https://pnpm.io/): Fast, disk space efficient package manager.
+
+[TurboRepo](https://turbo.build/repo/docs): High-performance build system for JavaScript and TypeScript codebases. It is designed for scaling monorepos.
 
 [Changesets](https://github.com/changesets/changesets): A tool to manage versioning and changelogs with a focus on multi-package repositories.
 
@@ -38,7 +40,7 @@
 
 [SolidJS](https://www.solidjs.com/): Simple and performant reactivity for building user interfaces.
 
-[Vite](https://vitejs.dev/): Frontend Tooling. It uses Rollup and esbuild internally for bundling
+[Vite](https://vitejs.dev/): Frontend Tooling. It uses Rollup and esbuild internally for bundling.
 
 [Vitest](https://vitest.dev/): Testing Framework.
 
