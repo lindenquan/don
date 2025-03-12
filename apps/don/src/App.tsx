@@ -1,9 +1,15 @@
 import type { Component } from "solid-js";
+import { createEffect } from "solid-js";
 
 import styles from "~/App.module.css";
 import logo from "~/logo.svg";
 
 const App: Component = () => {
+  console.log(import.meta.env);
+
+  createEffect(() => {
+    document.title = import.meta.env.VITE_APP_TITLE;
+  });
   return (
     <div class={styles.App}>
       <header class={styles.header}>
