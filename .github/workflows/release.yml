@@ -17,7 +17,7 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9.12.1
+          version: 10.6.2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -27,6 +27,22 @@ jobs:
 
       - name: Install Dependencies
         run: pnpm install
+        
+      - name: Run code check
+        run: pnpm lint:check
+
+      - name: Run tests
+        run: pnpm test
+
+      - name: Upload results to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: true
+          file: packages/app/coverage/coverage-final.json
+
+      - name: Build the application
+        run: pnpm build
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
