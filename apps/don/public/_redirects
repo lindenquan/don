@@ -1,1 +1,2 @@
-/*    /index.html   200
+# no redirection is needed for cloudflare pages 
+# https://developers.cloudflare.com/pages/configuration/serving-pages/#single-page-application-spa-rendering
