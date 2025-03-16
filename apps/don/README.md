@@ -1,27 +1,45 @@
-## Usage
+## Don
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+A personal financial management app based on [SolidJS](https://docs.solidjs.com)
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## Project Structure
 
-```bash
-$ npm install # or pnpm install or yarn install
+Inside your project, you'll see the following directory structure:
+
+```
+├── index.html
+├── public/
+│   └── ...
+└── src/
+    ├── components/
+    │   └── ...
+    ├── pages/
+    │   └── ...
+    └── routes/
+        └── ...
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+- `src/routes`: Routing & navigation. Please see the [routing docs](https://docs.solidjs.com/guides/routing-and-navigation) for more info.
+
+- `src/components`: Shared UI components.
+
+- `src/pages`: Web pages.
+
+- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm run dev` or `npm start`
+### `pnpm run dev` or `pnpm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 
-### `npm run build`
+### `pnpm run build`
 
 Builds the app for production to the `dist` folder.<br>
 It correctly bundles Solid in production mode and optimizes the build for the best performance.

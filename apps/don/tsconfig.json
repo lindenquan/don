@@ -4,7 +4,12 @@
     "types": [
       "vite/client",
       "@testing-library/jest-dom"
-    ]
+    ],
+    "paths": {
+      "#/*": [
+        "./*"
+      ]
+    }
   },
   "include": [
     "./src",
