@@ -1,8 +1,8 @@
 import type { Component } from "solid-js";
 import { createEffect } from "solid-js";
 
-import styles from "~/App.module.css";
-import logo from "~/assets/logo.svg";
+import logo from "~/public/images/logo.svg";
+import styles from "~/src/App.module.css";
 
 const App: Component = () => {
   console.log(import.meta.env);

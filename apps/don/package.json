@@ -13,7 +13,7 @@
     "prepreview-cloudflare": "pnpm build",
     "preview-cloudflare": "wrangler pages dev dist",
     "test": "vitest --no-watch --coverage",
-    "clean": "rm -rf dist node_modules coverage .turbo"
+    "clean": "rm -rf dist coverage"
   },
   "license": "MIT",
   "publishConfig": {
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@grpc/grpc-js": "^1.12.5",
+    "@solidjs/router": "^0.15.3",
     "@solidjs/testing-library": "^0.8.10",
     "@tailwindcss/postcss": "^4.0.3",
     "@testing-library/jest-dom": "^6.6.2",
