@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "target": "es2023",
-    "module": "es2022",
+    "target": "es2023", // ignored by vite
+    "module": "es2022", // ignored by vite, vite always uses ESM
+    "moduleResolution": "Bundler", // assumes ESM and supports subpath imports
     "types": [
       "vite/client"
     ],
@@ -11,7 +11,6 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "incremental": true,
@@ -24,7 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "noImplicitOverride": true,
-    "baseUrl": "."
+    "noImplicitOverride": true
   }
 }

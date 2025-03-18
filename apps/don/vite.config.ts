@@ -17,7 +17,12 @@ export default defineConfig({
     port: 3000,
   },
   build: {
-    target: "esnext",
+    target: "es2024",
+    ssr: false,
+    polyfillModulePreload: false,
+    modulePreload: true,
+    chunkSizeWarningLimit: 600, // kb
+    rollupOptions: {},
   },
   resolve: {
     alias: {
