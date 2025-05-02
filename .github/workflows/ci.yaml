@@ -31,7 +31,7 @@ jobs:
         run: pnpm install
 
       - name: Approve build scripts
-        run: pnpm approve-builds --auto-approve
+        run: AUTO_APPROVE=true pnpm approve-builds
 
       - name: Run code check
         run: pnpm lint:check
