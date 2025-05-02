@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Approve build scripts
+        run: pnpm approve-builds --auto-approve
+
       - name: Run code check
         run: pnpm lint:check
 
