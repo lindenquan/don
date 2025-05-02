@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Approve build scripts
+        run: AUTO_APPROVE=true pnpm approve-builds
+
       - name: Run code check
         run: pnpm lint:check
 
@@ -41,7 +44,7 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
-          file: packages/app/coverage/coverage-final.json
+          file: apps/don/coverage/coverage-final.json
 
       - name: Build the application
         run: pnpm build

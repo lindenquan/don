@@ -1,19 +1,24 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "allowJs": true,
     "types": [
-      "vite/client",
+      "vinxi/types/client",
+      "vitest/globals",
       "@testing-library/jest-dom"
     ],
-    "baseUrl": ".",
+    "baseUrl": ".", // tells TypeScript to treat that directory as the root for non-relative paths.
+    // This path alias won't affect the build; it keeps the same configuration as vite.config.ts
+    // so that the IDE can correctly resolve modules based on the alias configuration here.
     "paths": {
       "~/*": [
-        "./*"
+        "./src/*"
+      ],
+      "~public/*": [
+        "./public/*"
       ]
     }
-  },
-  "include": [
-    "./src",
-    "./test"
-  ]
+  }
 }

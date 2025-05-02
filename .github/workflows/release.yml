@@ -27,7 +27,10 @@ jobs:
 
       - name: Install Dependencies
         run: pnpm install
-        
+
+      - name: Approve build scripts
+        run: AUTO_APPROVE=true pnpm approve-builds
+
       - name: Run code check
         run: pnpm lint:check
 
