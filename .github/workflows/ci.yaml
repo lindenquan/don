@@ -36,9 +36,6 @@ jobs:
       - name: Run code check
         run: pnpm lint:check
 
-      - name: List app files
-        run:  ls -R apps/don/src/app.tsx
-
       - name: Run tests
         run: pnpm test
 
