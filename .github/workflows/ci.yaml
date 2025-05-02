@@ -36,6 +36,12 @@ jobs:
       - name: Run code check
         run: pnpm lint:check
 
+      - name: List app files
+        run: |
+         pwd
+         ls -R .
+         ls -R apps/don/src
+
       - name: Run tests
         run: pnpm test
 
