@@ -2,6 +2,7 @@
   "name": "@linden_quan/don",
   "version": "0.0.3",
   "description": "don client app",
+  "private": true,
   "scripts": {
     "dev": "vinxi dev",
     "build": "NITRO_PRESET=cloudflare_pages vinxi build",
