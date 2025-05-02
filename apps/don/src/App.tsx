@@ -1,22 +1,19 @@
-import { Route, Router } from "@solidjs/router";
-import type { Component } from "solid-js";
-import { Suspense, createEffect, lazy } from "solid-js";
+import { MetaProvider, Title } from "@solidjs/meta";
+import { Router } from "@solidjs/router";
+import { FileRoutes } from "@solidjs/start/router";
+import { Suspense } from "solid-js";
 
-const Home = lazy(() => import("./pages/home/Home"));
-const About = lazy(() => import("./pages/about/About"));
-
-const App: Component = () => {
-  createEffect(() => {
-    document.title = import.meta.env.VITE_APP_TITLE;
-  });
+export default function App() {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
-      <Router>
-        <Route path="/" component={Home} />
-        <Route path="/about" component={About} />
-      </Router>
-    </Suspense>
+    <Router
+      root={(props) => (
+        <MetaProvider>
+          <Title>{import.meta.env.VITE_APP_TITLE}</Title>
+          <Suspense>{props.children}</Suspense>
+        </MetaProvider>
+      )}
+    >
+      <FileRoutes />
+    </Router>
   );
-};
-
-export default App;
+}

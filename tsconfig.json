@@ -4,10 +4,9 @@
     "module": "es2022", // ignored by vite, vite always uses ESM
     "moduleResolution": "Bundler", // assumes ESM and supports subpath imports
     "types": [
-      "vite/client"
+      "vite/client",
+      "vitest/globals"
     ],
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,

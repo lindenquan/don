@@ -1,6 +1,6 @@
 ## Don
 
-A personal financial management app based on [SolidJS](https://docs.solidjs.com)
+A personal financial management app based on [SolidStart](https://docs.solidjs.com/solid-start)
 
 ## Project Structure
 
