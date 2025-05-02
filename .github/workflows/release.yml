@@ -42,7 +42,7 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
-          file: packages/app/coverage/coverage-final.json
+          file: apps/don/coverage/coverage-final.json
 
       - name: Build the application
         run: pnpm build
