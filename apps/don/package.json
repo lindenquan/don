@@ -1,6 +1,6 @@
 {
   "name": "@linden_quan/don",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "don client app",
   "scripts": {
     "dev": "vinxi dev",
