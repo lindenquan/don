@@ -1,6 +1,6 @@
 {
   "name": "@linden_quan/don",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "don client app",
   "private": true,
   "type": "module",
