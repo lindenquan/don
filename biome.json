@@ -9,7 +9,7 @@
       ".husky/",
       ".github/",
       ".turbo/",
-      "**/.vinxi/**"
+      "**/.astro/**"
     ]
   },
   "formatter": {
