@@ -35,9 +35,6 @@
     "paths": {
       "~/*": [
         "${configDir}/src/*"
-      ],
-      "~public/*": [
-        "${configDir}/public/*"
       ]
     }
   },
