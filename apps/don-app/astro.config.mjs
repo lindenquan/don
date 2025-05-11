@@ -15,7 +15,6 @@ export default defineConfig({
     resolve: {
       alias: {
         "~": path.resolve(__dirname, "src"), // Maps '~' to the src directory
-        "~public": path.resolve(__dirname, "public"), // Maps '~public' to the public directory
       },
     },
   },
