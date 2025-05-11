@@ -8,9 +8,15 @@
       "vitest/globals"
     ],
     "strict": true,
+    // Allow JSX files (or files that are internally considered JSX, like Astro files) to be imported inside `.js` and `.ts` files.
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "allowImportingTsExtensions": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
     "esModuleInterop": true,
+    "allowJs": true,
     "skipLibCheck": true,
     "incremental": true,
     "isolatedModules": true,
@@ -22,6 +28,24 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "noImplicitOverride": true
-  }
+    "noImplicitOverride": true,
+    "baseUrl": "${configDir}", // tells TypeScript to treat that directory as the root for non-relative paths.
+    // This path alias won't affect the build; it keeps the same configuration as vite.config.ts
+    // so that the IDE can correctly resolve modules based on the alias configuration here.
+    "paths": {
+      "~/*": [
+        "${configDir}/src/*"
+      ],
+      "~public/*": [
+        "${configDir}/public/*"
+      ]
+    }
+  },
+  "exclude": [
+    "${configDir}/dist"
+  ],
+  "include": [
+    "${configDir}/.astro/types.d.ts",
+    "${configDir}/**/*"
+  ]
 }
