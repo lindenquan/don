@@ -1,11 +1,10 @@
 packages:
   - apps/*
   - packages/*
-ignoredBuiltDependencies:
-  - '@tailwindcss/oxide'
 onlyBuiltDependencies:
   - '@biomejs/biome'
   - '@parcel/watcher'
+  - '@tailwindcss/oxide'
   - esbuild
   - sharp
   - workerd
