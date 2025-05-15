@@ -1,9 +1,10 @@
 ---
-import SettingComponent from "~/components/settings/Settings";
+import { Theme, TimeSetting } from "~/components/settings";
 import Layout from "~/layouts/Layout.astro";
 import "~/styles/global.css";
 ---
 
 <Layout>
-	<SettingComponent client:load></SettingComponent>
+	<Theme client:load></Theme>
+	<TimeSetting client:load></TimeSetting>
 </Layout>

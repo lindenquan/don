@@ -6,3 +6,6 @@ export const setTheme = (theme: Theme) =>
 
 export const setLanguage = (lang: string) =>
   dispatchAppConfig({ type: "SET_LANGUAGE", payload: lang });
+
+export const setTimeZone = (timeZone: string) =>
+  dispatchAppConfig({ type: "SET_TIMEZONE", payload: timeZone });

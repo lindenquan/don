@@ -1,18 +1,21 @@
-import { setAppConfig } from "./state";
+import { updateAppConfig } from "./state";
 import type { Theme } from "./types";
 
 export type AppConfigAction =
   | { type: "SET_THEME"; payload: Theme }
-  | { type: "TOGGLE_SIDEBAR" }
-  | { type: "SET_LANGUAGE"; payload: string };
+  | { type: "SET_LANGUAGE"; payload: string }
+  | { type: "SET_TIMEZONE"; payload: string };
 
 export function dispatchAppConfig(action: AppConfigAction) {
   switch (action.type) {
     case "SET_THEME":
-      setAppConfig("theme", action.payload);
+      updateAppConfig("theme", action.payload);
       break;
     case "SET_LANGUAGE":
-      setAppConfig("language", action.payload);
+      updateAppConfig("language", action.payload);
+      break;
+    case "SET_TIMEZONE":
+      updateAppConfig("timeZone", action.payload);
       break;
   }
 }
