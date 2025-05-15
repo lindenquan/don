@@ -9,7 +9,8 @@
       ".husky/",
       ".github/",
       ".turbo/",
-      "**/.astro/**"
+      "**/.astro/**",
+      "global.css"
     ]
   },
   "formatter": {

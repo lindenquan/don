@@ -2,7 +2,7 @@ import { createStore } from "solid-js/store";
 import type { AppConfigState } from "./types";
 
 const [appConfig, setAppConfig] = createStore<AppConfigState>({
-  theme: "light",
+  theme: "winter",
   language: "en",
   timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
 });

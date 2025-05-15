@@ -1,2 +1,5 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  include: button, input, select;
+  themes: fantasy --default, dracula --prefersdark;
+}

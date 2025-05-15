@@ -8,7 +8,7 @@ export default function UserPanel() {
       <Show
         when={userState.user}
         fallback={
-          <button class="text-3xl font-bold" onClick={() => login("x", "x")}>
+          <button class="btn btn-primary" onClick={() => login("x", "x")}>
             Login
           </button>
         }

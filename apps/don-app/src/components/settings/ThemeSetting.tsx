@@ -6,7 +6,10 @@ export default function Theme() {
     <div>
       <p>Theme: {appConfig.theme}</p>
       <button
-        onClick={() => setTheme(appConfig.theme === "light" ? "dark" : "light")}
+        class="btn"
+        onClick={() =>
+          setTheme(appConfig.theme === "dracula" ? "fantasy" : "dracula")
+        }
       >
         Toggle Theme
       </button>

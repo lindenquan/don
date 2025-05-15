@@ -1,4 +1,4 @@
-export type Theme = "light" | "dark";
+export type Theme = "fantasy" | "dracula";
 
 export type AppConfigState = {
   theme: Theme;
