@@ -1,6 +1,8 @@
 ---
-// Accepts page content via the `children` slot
-const { title } = Astro.props;
+import UserPanel from "~/components/shared/UserPanel";
+import "~/styles/global.css";
+
+const APP_TITLE = import.meta.env.APP_TITLE || "Don";
 ---
 
 <!doctype html>
@@ -10,9 +12,10 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{APP_TITLE}</title>
 	</head>
 	<body>
+		<UserPanel client:load></UserPanel>
 		<slot />
 	</body>
 </html>
