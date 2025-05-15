@@ -9,10 +9,10 @@
     "url": "https://github.com/lindenquan/don"
   },
   "engines": {
-    "node": ">=18.17.0",
-    "pnpm": ">=10.6.2"
+    "node": ">=20.17.0",
+    "pnpm": ">=10.11.0"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.0",
   "keywords": [
     "financial management"
   ],
